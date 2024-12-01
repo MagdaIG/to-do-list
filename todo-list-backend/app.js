@@ -8,6 +8,8 @@ const PORT = 3000;
 // Configuración de Express
 app.use(bodyParser.json());
 app.use(cors()); // Habilitar CORS
+app.use(express.json({limit: '1000mb'}));
+app.use(express.urlencoded({limit: '1000mb', extended: true}));
 
 // Configuración de SQLite
 const db = new sqlite3.Database('basededatos.sql');
