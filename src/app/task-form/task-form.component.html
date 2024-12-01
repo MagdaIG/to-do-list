@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Nueva Tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Título</ion-label>
+    <ion-input [(ngModel)]="newTask.title"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Descripción</ion-label>
+    <ion-input [(ngModel)]="newTask.description"></ion-input>
+  </ion-item>
+
+  <ion-button class="boton" expand="full" (click)="takePicture()">Tomar foto</ion-button>
+  <ion-item *ngIf="newTask.image !== ''">
+    <ion-img [src]="newTask.image"></ion-img>
+  </ion-item>
+
+  <ion-button class="boton" expand="full" (click)="saveTask()">Guardar Tarea</ion-button>
+</ion-content>
+
+
+
+

@@ -1,0 +1,132 @@
+/* Variables de color */
+$primary-color: #9b4d96; /* Morado pastel */
+$secondary-color: #6a4c9c; /* Morado más suave */
+$background-color: #f4eef9; /* Fondo claro y suave */
+$text-color: #4f4f4f; /* Gris oscuro para texto */
+$input-bg-color: #ffffff; /* Fondo blanco para inputs */
+$border-color: #e0d6e6; /* Bordes suaves y claros */
+$button-hover-color: #9b4d96; /* Color hover morado suave */
+$shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+$danger-color: #e57373; /* Rojo pastel para eliminar */
+
+ion-item:nth-child(odd) {
+  background: #f4eef9;
+  --ion-item-background: #f4eef9; /* Fondo claro para los elementos impares (1er, 3er, etc.) */
+}
+
+ion-item:nth-child(even) {
+  background: #e0d6e6;
+  --ion-item-background: #e0d6e6; /* Fondo más suave para los elementos pares (2do, 4to, etc.) */
+}
+
+/* Estilos Generales */
+ion-header {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+ion-toolbar {
+  --background: $primary-color;
+}
+
+ion-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+/* Estilo para los items en la lista de tareas */
+ion-item {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px $shadow-color;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid $border-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  ion-label {
+    color: $text-color;
+    font-weight: 500;
+
+    h2 {
+      font-size: 1.2rem;
+      color: $primary-color;
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $text-color;
+    }
+  }
+}
+
+ion-img {
+  max-width: 150px; /* Limita el tamaño de la imagen */
+  margin: 16px auto; /* Centra la imagen */
+  display: block;
+  border-radius: 8px;
+}
+
+/* Estilo para los botones de acción */
+ion-button {
+  --background: $secondary-color;
+  --color: #ffffff;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px $shadow-color;
+
+  &:hover {
+    --background: $button-hover-color;
+  }
+
+  ion-icon {
+    color: #ffffff;
+  }
+
+  &.danger {
+    --background: $danger-color;
+  }
+}
+
+/* Estilos para la barra de acción de la lista */
+ion-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+
+  ion-button {
+    --background: $primary-color;
+    --border-radius: 50%;
+    --padding: 8px;
+    ion-icon {
+      color: white;
+    }
+  }
+}
+
+/* Estilo para los iconos */
+ion-icon {
+  color: $text-color;
+  font-size: 20px;
+}
+
+/* Estilo para el botón flotante de agregar tarea */
+ion-fab-button {
+  --background: $primary-color;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --border-radius: 50%;
+}
+
+ion-fab-button:hover {
+  --background: darken($primary-color, 5%);
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #ffffff;
+}

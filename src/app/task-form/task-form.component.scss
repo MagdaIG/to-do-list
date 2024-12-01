@@ -1,0 +1,97 @@
+/* Variables de color */
+$primary-color: #9b4d96; /* Morado pastel */
+$secondary-color: #6a4c9c; /* Morado más suave */
+$background-color: #f4eef9; /* Fondo claro y suave */
+$text-color: #4f4f4f; /* Gris oscuro para texto */
+$input-bg-color: #ffffff; /* Fondo blanco para inputs */
+$border-color: rgba(219, 192, 246, 0.99); /* Bordes suaves y claros */
+$button-hover-color: #9b4d96; /* Color hover morado suave */
+$shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+.task-form {
+  background-color: rgba(255,253,171,0.71) !important;
+}
+
+
+.boton {
+  background-color: $primary-color;
+}
+
+.boton:hover {
+  background-color: $border-color !important;
+  color: black !important;
+}
+
+ion-button:hover{
+    background-color: $border-color !important;
+    color: black !important;
+}
+
+/* Estilos Generales */
+ion-content {
+  padding: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+ion-header {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+ion-toolbar {
+  --background: $primary-color;
+}
+
+ion-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+
+/* Estilos para los campos de entrada (inputs) */
+ion-input {
+  --background: $input-bg-color;
+  --border-radius: 8px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --border-color: $border-color;
+
+  input {
+    color: $text-color;
+  }
+}
+
+ion-label {
+  font-size: 1rem;
+  color: $text-color;
+}
+
+/* Estilo para los botones */
+ion-button {
+  --background: $button-hover-color;
+  --color: #ffffff;
+  --border-radius: 8px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --box-shadow: 0 4px 8px $shadow-color;
+
+  &:hover {
+    --background: $button-hover-color;
+  }
+
+  ion-icon {
+    color: #ffffff;
+  }
+}
+
+
+/* Estilos para mostrar la imagen tomada */
+ion-img {
+  max-width: 80%; /* Limita el tamaño de la imagen */
+  margin: 16px auto; /* Centra la imagen */
+  display: block;
+  border-radius: 8px;
+  max-height: 300px; /* Ajusta la altura máxima de la imagen */
+}

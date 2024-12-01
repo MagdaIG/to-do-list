@@ -1,0 +1,14 @@
+{
+  "name": "todo-list-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.0.2",
+    "cors": "^2.8.5",
+    "express": "5.0.0",
+    "sqlite3": "^5.1.7"
+  }
+}
